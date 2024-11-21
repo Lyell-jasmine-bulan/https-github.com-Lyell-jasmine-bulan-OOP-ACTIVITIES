@@ -1,25 +1,22 @@
-public class person {
-    protected String name;
-    protected String address;
+public class Person {
+    protected String Name;
+    protected String Address;
 
-    public person(String name, String address){
-        this.name = name;
-        this.address = address;
+    public void setName(String Name){
+        this.Name = Name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setAddress(String Address){
-        this.address = Address;
+        this.Address = Address;
     }
-
     public String getName(){
-        return name;
+        return Name;
+    }
+    public String getAddress(){
+        return Address;
+    }
+    @Override
+    public String toString(){
+        return "Hello I am " + Name + " and " + "I lived in " + Address + ". ";
     }
 
-    public String getAddress(){
-        return address;
-    }
 }
