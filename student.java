@@ -1,28 +1,17 @@
-public class student extends person {
-    private String program;
-    private int year;
+class Student{
+    private int Student_Id;
+    private String name;
 
-    public student(String name, String Address, String program, int year){
-        super(name, Address);
-        this.program = program;
-        this.year = year;
+    public void setId(int id){
+        this.Student_Id = id;
     }
-
-    public void setProgram(String program){
-        this.program = program;
+    public int getId(){
+        return Student_Id;
     }
-
-    public void setYear(int year){
-        this.year = year;
+    public void setname(String s_name){
+        this.name = s_name;
     }
-
-    public String getProgram(){
-        return program;
+    public String getname(){
+        return name;
     }
-
-    public int getYear(){
-        return year;
-    }
-
-    
 }
